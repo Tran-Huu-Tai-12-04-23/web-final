@@ -1,0 +1,91 @@
+.menu-edit {
+  position: absolute;
+  right: 5rem;
+  top: 1rem;
+}
+.modal-share {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(0.6rem);
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  z-index: 200000;
+  scale: 0;
+}
+.modal-share .main-modal-share {
+  position: relative;
+  min-width: 30rem;
+  min-height: 10rem;
+  border-radius: 1rem;
+}
+#close-modal-share {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  font-size: 3rem;
+}
+#close-modal-share:hover {
+  color: rgb(206, 36, 36);
+}
+
+.reply-comment-item,
+.sub-reply-comment-item {
+  /* animation: showText 0.2s linear forwards; */
+}
+.menu-edit-comment,
+.menu-edit-reply-comment {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+@keyframes showText {
+  0% {
+    opacity: 0;
+    filter: blur(1rem);
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+.menu-edit-reply-comment {
+  z-index: 100000;
+}
+
+.item-slider-watch {
+  width: 100%;
+  max-height: 13rem;
+  display: flex;
+  justify-content: start;
+  font-size: 1.4rem;
+  position: relative;
+  cursor: pointer;
+}
+.item-slider-watch:hover {
+  transition: 0.2s;
+  box-shadow: 0px 0px 10px #1196dd;
+  background-color: #151a2a;
+  backdrop-filter: blur(5rem);
+  z-index: 2;
+}
+.item-slider-watch img {
+  object-fit: cover;
+  width: 45%;
+  height: 100%;
+}
+
+.item-slider-watch .item-most-watched-content {
+  /* height: 100%; */
+}
+.item-slider-watch .item-most-watched-content .title-card {
+}

@@ -1,0 +1,89 @@
+.process-upload-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.process-upload-video .step {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 1rem;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+  position: relative;
+}
+.process-upload-video .name-step:nth-child(2) {
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+.process-upload-video .step:nth-child(2) {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+.process-upload-video .step:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  width: 10rem;
+  height: 2px;
+  border: 1rem;
+  background-color: #ccc;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -10rem;
+}
+.process-upload-video .step:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  width: 10rem;
+  height: 2px;
+  border: 1rem;
+  position: absolute;
+  background-color: #ccc;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -10rem;
+}
+.process-upload-video .step:nth-child(1) {
+  background-color: dodgerblue;
+}
+.process-upload-video .active-step.step:nth-child(2)::after {
+  background-color: dodgerblue;
+}
+.process-upload-video .active-step.step:nth-child(3)::after {
+  background-color: dodgerblue;
+}
+.process-upload-video .active-step.step:nth-child(2) {
+  background-color: dodgerblue;
+}
+.process-upload-video .active-step.step:nth-child(3) {
+  background-color: dodgerblue;
+}
+.process-upload-video .name-step {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.timeline-upload {
+  width: 100%;
+  height: 1rem;
+  background-color: dodgerblue;
+  margin-top: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  animation: timelline 3s linear forwards;
+}
+
+@keyframes timelline {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}

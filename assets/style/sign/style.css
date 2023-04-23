@@ -1,0 +1,42 @@
+.main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: url("https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1776&q=80")
+        no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+}
+.main::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(
+        18deg,
+        rgba(8, 18, 34, 1) 38%,
+        rgba(8, 18, 34, 0.8) 80%,
+        rgba(8, 18, 34, 0.7) 100%
+    );
+    z-index: 2;
+}
+.header-sign {
+    z-index: 1000;
+}
+
+.image-register {
+    background: url("../../images/signUp.png");
+    height: 30rem;
+    width: 35rem;
+    background-size: cover;
+}
+.form-login {
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    position: relative;
+    z-index: 1000;
+}
